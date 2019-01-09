@@ -1,3 +1,3 @@
 # Reddit Lite
 
-## Author: Kris Frenette
+#### Author: Kris Frenette
