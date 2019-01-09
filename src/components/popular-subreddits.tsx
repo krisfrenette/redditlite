@@ -11,8 +11,7 @@ export default class PopularSubreddits extends React.Component {
                 <StyledLink to="/news">News</StyledLink>
                 <StyledLink to="/funny">Funny</StyledLink>
                 <StyledLink to="/gifs">Gifs</StyledLink>
-                <StyledLink to="/news">News</StyledLink>
-                <StyledLink to="programming">Programming</StyledLink>
+                <StyledLink to="/programming">Programming</StyledLink>
             </SubredditWrapper>
         );
     }

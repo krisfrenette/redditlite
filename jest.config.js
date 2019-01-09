@@ -5,6 +5,7 @@ module.exports = {
         '^.+\\.tsx?$': 'ts-jest'
     },
     testRegex: '(/__tests__/.*|(\\.|/)spec)\\.(jsx?|tsx?)$',
+    testPathIgnorePatterns: ['<rootDir>/node_modules', '<rootDir>/dist'],
     moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx', 'json'],
     moduleDirectories: ['.', 'src', 'node_modules'],
     coverageDirectory: `${__dirname}/coverage`,
