@@ -1,0 +1,54 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`reducer handles the fetch posts failed action 1`] = `
+Object {
+  "fetchingData": false,
+}
+`;
+
+exports[`reducer handles the fetch posts request action 1`] = `
+Object {
+  "fetchingData": true,
+}
+`;
+
+exports[`reducer handles the fetch posts success action 1`] = `
+Object {
+  "after": null,
+  "before": null,
+  "currentPaging": Object {
+    "count": 0,
+    "direction": null,
+  },
+  "fetchingData": false,
+  "posts": Array [
+    Object {
+      "id": "mockId",
+    },
+  ],
+}
+`;
+
+exports[`reducer handles the reset state 1`] = `
+Object {
+  "after": null,
+  "before": null,
+  "count": 0,
+  "currentPaging": null,
+  "fetchingData": true,
+  "name": null,
+  "posts": Array [],
+}
+`;
+
+exports[`reducer sets a default state 1`] = `
+Object {
+  "after": null,
+  "before": null,
+  "count": 0,
+  "currentPaging": null,
+  "fetchingData": true,
+  "name": null,
+  "posts": Array [],
+}
+`;

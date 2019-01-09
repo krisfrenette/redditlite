@@ -1,0 +1,29 @@
+{
+    "compilerOptions": {
+        "experimentalDecorators": true,
+        "noImplicitAny": false,
+        "target": "es5",
+        "jsx": "react",
+        "allowJs": true,
+        "moduleResolution": "node",
+        "baseUrl": "./src",
+        "sourceMap": true,
+        "noErrorTruncation": true,
+        "pretty": true,
+        "noUnusedLocals": true,
+        "module": "esnext",
+        "paths": {
+            "*": ["*"]
+        },
+        "outDir": "./dist",
+        "rootDir": ".",
+        "lib": ["es2015", "es2017", "dom"],
+        "typeRoots": ["./node_modules/@types", "./typings.d.ts"],
+        "plugins": [
+            {
+                "name": "typescript-styled-plugin"
+            }
+        ]
+    },
+    "exclude": ["node_modules", "dist"]
+}

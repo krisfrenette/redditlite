@@ -1,0 +1,91 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`fetchNewPosts calls newPosts 1`] = `
+[MockFunction] {
+  "calls": Array [
+    Array [
+      Object {
+        "count": 50,
+        "direction": null,
+        "limit": 25,
+        "subreddit": "mockSubreddit",
+      },
+    ],
+  ],
+  "results": Array [
+    Object {
+      "isThrow": false,
+      "value": Object {
+        "after": "after",
+        "before": "before",
+        "children": Array [
+          Object {
+            "data": Object {
+              "author": "mockAuthor1",
+              "created": 12345,
+              "id": "mockId1",
+              "permalink": "mockPermalink1",
+              "thumbnail": null,
+              "thumbnail_height": null,
+              "thumbnail_width": null,
+              "title": "mockTitle1",
+              "url": "mockUrl1",
+            },
+          },
+        ],
+      },
+    },
+  ],
+}
+`;
+
+exports[`fetchNewPosts fetch successfully gets posts for a given subreddit 1`] = `
+[MockFunction] {
+  "calls": Array [
+    Array [
+      Object {
+        "type": "subreddit/fetch/new/request",
+      },
+    ],
+    Array [
+      Object {
+        "payload": Object {
+          "after": "after",
+          "before": "before",
+          "count": 50,
+          "currentPaging": Object {
+            "count": 50,
+            "direction": null,
+          },
+          "posts": Array [
+            Object {
+              "author": "mockAuthor1",
+              "commentUrl": "mockPermalink1",
+              "created": 12345,
+              "id": "mockId1",
+              "thumbnail": Object {
+                "height": null,
+                "url": null,
+                "width": null,
+              },
+              "title": "mockTitle1",
+              "url": "mockUrl1",
+            },
+          ],
+        },
+        "type": "subreddit/fetch/new/success",
+      },
+    ],
+  ],
+  "results": Array [
+    Object {
+      "isThrow": false,
+      "value": Promise {},
+    },
+    Object {
+      "isThrow": false,
+      "value": Promise {},
+    },
+  ],
+}
+`;

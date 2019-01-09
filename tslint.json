@@ -1,0 +1,14 @@
+{
+    "extends": ["tslint:recommended", "tslint-react", "tslint-config-prettier"],
+    "rules": {
+        "quotemark": [true, "single", "jsx-double", "avoid-escape"],
+        "ordered-imports": false,
+        "object-literal-sort-keys": false,
+        "interface-over-type-literal": false,
+        "member-ordering": false,
+        "max-classes-per-file": false,
+        "no-unused-expression": [true, "allow-tagged-template"],
+        "no-empty": [true, "allow-empty-catch"],
+        "no-parameter-properties": true
+    }
+}
